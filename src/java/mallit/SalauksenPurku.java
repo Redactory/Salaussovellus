@@ -41,7 +41,7 @@ public class SalauksenPurku {
             if (indeksi > 26) {
                 System.out.println("luku: " + luku);
                 System.out.println("indeksi: " + indeksi);
-                c = 'B';
+                c = '?';
             } else {
                 c = k.charAt(indeksi - 1);
             }

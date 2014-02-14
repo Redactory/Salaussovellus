@@ -43,33 +43,22 @@ public class Salaus {
     }
 
     public static String Erikoismerkit(char c) {
-        int luku = 0;
         String hex = "";
         
         if (c == '!') {
-            luku = 9;
             hex = "09";
-//            hex = Integer.toHexString(luku);
         } 
         else if (c == '.') {
-            luku = 5;
             hex = "05";
-//            hex = Integer.toHexString(luku);
         } 
         else if (c == ',') {
-            luku = 1;
             hex = "01";
-//            hex = Integer.toHexString(luku);
         } 
         else if (c == '?') {
-            luku = 13;
             hex = "13";
-//            hex = Integer.toHexString(luku);
         } 
         else if (c == ' ') {
-            luku = 0;
             hex = "00";
-//            hex = Integer.toHexString(luku);
         }
         
         
