@@ -3,13 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Toimintosivu.jsp</file>
-            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/index.jsp</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Toiminto_salaus.jsp</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Toiminto_purku.jsp</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/kontrollerit/Toiminto_salaus.java</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/kontrollerit/Kysymyssivu.java</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/mallit/SalauksenPurku.java</file>
             <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/kontrollerit/Servletti_Isa.java</file>
-            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Virhesivu.jsp</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/mallit/Salaus.java</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/kontrollerit/Toiminto_purku.java</file>
             <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/src/java/kontrollerit/Toimintosivu.java</file>
-            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/WEB-INF/web.xml</file>
-            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/WEB-INF/tags/pohja.tag</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Tervetulosivu.jsp</file>
+            <file>file:/home/tktl-csfs/fs/home/teematve/NetBeansProjects/Salaussovellus/web/Kysymyssivu.jsp</file>
         </group>
     </open-files>
 </project-private>

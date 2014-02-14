@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package kontrollerit;
 
 import java.io.IOException;
@@ -30,7 +29,15 @@ public class Toimintosivu extends Servletti_Isa {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        naytaJSP("Toimintosivu.jsp", request, response);
+        request.setCharacterEncoding("UTF-8");
+
+
+        if (onkoKirjautunut(request) == true) {
+            naytaJSP("Tervetulosivu.jsp", request, response);
+        } else {
+            response.sendRedirect("Kysymyssivu");
+        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

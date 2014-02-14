@@ -19,6 +19,24 @@
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
+
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Toimintosivu">Etusivu</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="UlosKirjautuminen">Kirjaudu ulos</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Toiminto_salaus">Kryptaus</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Toiminto_purku">Kryptauksen purku</a></li>
+                </ul>                
+            </div>
+        </div>
+
         <div class="container">
             <jsp:doBody/>
             <c:if test="${Virhe != null}" >

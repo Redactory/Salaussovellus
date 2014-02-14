@@ -34,16 +34,16 @@
                 <div class="col-md-8 panel panel-default">
                     <h2>Tekstin salaaminen</h2>
 
-                    <form class="col-md-5 form-horizontal" role="form" action="MuutoksetLisaykset" method="POST">
+                    <form class="col-md-5 form-horizontal" role="form" action="Toimintosivu" method="POST">
                         <div class="form-group">
-                            <label for="inputIngredients1" class="col-md-4 control-label">Valmistusohjeet</label>
+                            <label for="inputIngredients1" class="col-md-4 control-label">Salattava teksti</label>
                             <div class="col-md-5">
-                                <textarea NAME="recipe" rows="4" cols="50"></textarea>
+                                <textarea NAME="salattava" rows="4" cols="50"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="inputRecipe1" class="col-md-4 control-label">Kuvaus</label>
+                            <label for="inputRecipe1" class="col-md-4 control-label">Tulos</label>
                             <div class="col-md-5">
                                 <textarea NAME="description" rows="4" cols="50"></textarea>
                             </div>
@@ -51,7 +51,7 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <button type="submit" class="btn btn-default">Lisää</button>
+                                <button type="submit" class="btn btn-default">Salaa</button>
                             </div>
                         </div>
                     </form>
@@ -61,44 +61,16 @@
                 <div class="col-md-8 panel panel-default">
                     <h2>Salauksen purku</h2>
                     
-                    <form class="col-md-5 form-horizontal" role="form" action="MuutoksetLisaykset" method="POST">
+                    <form class="col-md-5 form-horizontal" role="form" action="Toimintosivu" method="POST">
                         <div class="form-group">
-                            <label for="inputName1" class="col-md-4 control-label">Nimi</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="inputPassword1" name="name">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputIngredients1" class="col-md-4 control-label">Kehittäjä</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="inputPassword1" name="maker">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputIngredients1" class="col-md-4 control-label">Tyyppi</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="inputPassword1" name="type">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputIngredients1" class="col-md-4 control-label">Raaka-aineet</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control" id="inputPassword1" name="ingredients">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputIngredients1" class="col-md-4 control-label">Valmistusohjeet</label>
+                            <label for="inputIngredients1" class="col-md-4 control-label">Purettava merkkijono</label>
                             <div class="col-md-5">
-                                <textarea NAME="recipe" rows="4" cols="50"></textarea>
+                                <textarea NAME="purettava" rows="4" cols="50"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="inputRecipe1" class="col-md-4 control-label">Kuvaus</label>
+                            <label for="inputRecipe1" class="col-md-4 control-label">Tulos</label>
                             <div class="col-md-5">
                                 <textarea NAME="description" rows="4" cols="50"></textarea>
                             </div>
@@ -106,7 +78,7 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <button type="submit" class="btn btn-default">Lisää</button>
+                                <button type="submit" class="btn btn-default">Pura</button>
                             </div>
                         </div>
                     </form>
@@ -116,7 +88,7 @@
                 <!--Paluu etusivulle.-->
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <button type="submit" class="btn btn-default">Etusivulle</button>
+                        <button type="submit" class="btn btn-default">Poistu</button>
                     </div>
                 </div>
             </div>

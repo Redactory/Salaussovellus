@@ -7,20 +7,19 @@ package kontrollerit;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import mallit.Kayttaja;
+import static kontrollerit.Servletti_Isa.naytaJSP;
+import mallit.SalauksenPurku;
+import mallit.Salaus;
 
 /**
  *
  * @author teematve@cs
  */
-public class Kysymyssivu extends Servletti_Isa {
+public class Toiminto_purku extends Servletti_Isa {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,31 +34,24 @@ public class Kysymyssivu extends Servletti_Isa {
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
 
-        String oikea_salasana = "Sisaan34";
-        String annettu_salasana = request.getParameter("vastaus");
+        String purettava = request.getParameter("purettava");
+        String purettu = "";
 
-        // Tarkistetaan mallilta onko parametrina saatu oikea vastaus
-        if (annettu_salasana != null && annettu_salasana.equals(oikea_salasana)) {
-            // Jos tunnus on oikea, ohjataan käyttäjä HTTP-ohjauksella aloitussivulle.
-            HttpSession session = request.getSession();
-            session.setAttribute("Kirjautunut", new Kayttaja());
-
-            response.sendRedirect("Toimintosivu");
-        } else {
-            /* Väärän tunnuksen syöttänyt saa eteensä lomakkeen ja virheen.
-             * Tässä käytetään omalta yläluokalta perittyjä yleiskäyttöisiä metodeja.
-             */
+        if (onkoKirjautunut(request) == true) {
             if (request.getMethod().equals("POST") == false) {
-                naytaJSP("Kysymyssivu.jsp", request, response);
+                naytaJSP("Toiminto_purku.jsp", request, response);
             } else {
-                naytaVirhe(request, "Annoit väärän vastauksen. Yritä siis uudelleen.");
-                naytaJSP("Kysymyssivu.jsp", request, response);
+                purettu = SalauksenPurku.Hex_to_decim(purettava);
+                request.setAttribute("tulos", purettu);
+                naytaJSP("Toiminto_purku.jsp", request, response);
             }
-        }
 
+        } else {
+            response.sendRedirect("Kysymyssivu");
+        }
     }
 
-// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *

@@ -14,7 +14,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap-theme.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
-        <title>Sisään kirjautuminen</title>
+        <title>Sisäänpääsy</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
@@ -24,11 +24,11 @@
                     ja muusta sellaisesta?</h1>
             </section>
 
-            <form class="form-horizontal" role="form" action="Kirjautuminen" method="POST">
+            <form class="form-horizontal" role="form" action="Kysymyssivu" method="POST">
                 <div class="form-group">
                     <label for="inputPassword1" class="col-md-2 control-label">Vastaus</label>
                     <div class="col-md-10">
-                        <input type="password" class="form-control" id="inputPassword1" name="Salasana">
+                        <input type="password" class="form-control" id="inputPassword1" name="vastaus">
                     </div>
                 </div>
                 <div class="form-group">

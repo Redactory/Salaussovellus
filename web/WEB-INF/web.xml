@@ -12,6 +12,14 @@
         <servlet-name>Toimintosivu</servlet-name>
         <servlet-class>kontrollerit.Toimintosivu</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Toiminto_purku</servlet-name>
+        <servlet-class>kontrollerit.Toiminto_purku</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Toiminto_salaus</servlet-name>
+        <servlet-class>kontrollerit.Toiminto_salaus</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Servletti_Isa</servlet-name>
         <url-pattern>/Servletti_Isa</url-pattern>
@@ -24,12 +32,20 @@
         <servlet-name>Toimintosivu</servlet-name>
         <url-pattern>/Toimintosivu</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Toiminto_purku</servlet-name>
+        <url-pattern>/Toiminto_purku</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Toiminto_salaus</servlet-name>
+        <url-pattern>/Toiminto_salaus</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>Kysymyssivu.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
