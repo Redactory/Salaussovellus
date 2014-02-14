@@ -20,6 +20,10 @@
         <servlet-name>Toiminto_salaus</servlet-name>
         <servlet-class>kontrollerit.Toiminto_salaus</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UlosKirjautuminen</servlet-name>
+        <servlet-class>kontrollerit.UlosKirjautuminen</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Servletti_Isa</servlet-name>
         <url-pattern>/Servletti_Isa</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Toiminto_salaus</servlet-name>
         <url-pattern>/Toiminto_salaus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UlosKirjautuminen</servlet-name>
+        <url-pattern>/UlosKirjautuminen</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

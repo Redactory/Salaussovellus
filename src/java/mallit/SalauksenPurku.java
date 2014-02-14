@@ -11,7 +11,6 @@ package mallit;
  */
 public class SalauksenPurku {
 
-//    public static String s = "5f32271247001a0a470a0a010037022f160a2612090047322f00271e122f00161e3716022f020026125f12572a1e1a02470057020026122f2f0a47004f02122f2f0202002702262f022a16260a47002f2a4f0a1a02024705";
     public static String k = "abcdefghijklmnopqrstuvwxyz";
 
     public static char Tapa1(int luku) {

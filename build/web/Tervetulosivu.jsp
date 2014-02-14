@@ -38,5 +38,10 @@
         <h1>Tervetuloa!</h1>
         <p>Haluat siis jonkin asian joko pysyvän salassa tai selvittää mitä tämä salaisuus sitten on?
             Siinä tapauksessa tervetuloa ja valitse navigointipalkista mitä haluat tehdä.</p>
+        
+        <p> Tässä vaiheessa haluan vain varoittaa että kryptauksen purussa kannattaa syötettävän 
+            merkkijonon kohdalla vältää välien lisäämista syötteeseen. 
+            Sovellusta ei ole ajanpuutteen vuoksi ohjelmoitu ottamaan niitä huomioon ja se 
+            tuottaa kryptauksen purussa mm. ylimääräisiä merkkejä tulosteeseen.</p>
     </body>
 </html>

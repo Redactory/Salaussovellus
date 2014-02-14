@@ -22,7 +22,10 @@ public class Salaus {
 
         luku = 2 * jarj_nro;
         hex = Integer.toHexString(luku);
-
+        
+        if (hex.length() < 2) {
+            hex = "0" + hex;
+        }
         return hex;
     }
 
@@ -40,8 +43,37 @@ public class Salaus {
     }
 
     public static String Erikoismerkit(char c) {
-
-        return "";
+        int luku = 0;
+        String hex = "";
+        
+        if (c == '!') {
+            luku = 9;
+            hex = "09";
+//            hex = Integer.toHexString(luku);
+        } 
+        else if (c == '.') {
+            luku = 5;
+            hex = "05";
+//            hex = Integer.toHexString(luku);
+        } 
+        else if (c == ',') {
+            luku = 1;
+            hex = "01";
+//            hex = Integer.toHexString(luku);
+        } 
+        else if (c == '?') {
+            luku = 13;
+            hex = "13";
+//            hex = Integer.toHexString(luku);
+        } 
+        else if (c == ' ') {
+            luku = 0;
+            hex = "00";
+//            hex = Integer.toHexString(luku);
+        }
+        
+        
+        return hex;
     }
 
     public static String Salaus(String s) {
@@ -54,7 +86,7 @@ public class Salaus {
             indeksi = k.indexOf(kirjain);
 
             if (kirjain == '!' || kirjain == '.' || kirjain == ',' || kirjain == '?' || kirjain == ' ') {
-                Erikoismerkit(kirjain);
+                hexString += Erikoismerkit(kirjain);
             } else if (indeksi % 2 == 0) {
                 hexString += Tapa1(kirjain);
             } else {
